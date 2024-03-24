@@ -19,9 +19,14 @@ export default function useOrden() {
             setOrder([...order, newItem])
         }
     }
+
+    const removeItem = () => {
+        console.log("Removing item")
+    }
     
     return {
         order,
         addItem,
+        removeItem,
     }
 }
