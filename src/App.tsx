@@ -2,6 +2,7 @@ import { menuItems } from "./data/db"
 import MenuItem from "./components/MenuItem"
 import useOrder from "./hooks/useOrden"
 import OrderContents from "./components/OrderContents"
+import OrderTotals from "./components/OrderTotals"
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             order = {order}
             removeItem = {removeItem}
           />
+          <OrderTotals />
           
         </div>
       </main>
