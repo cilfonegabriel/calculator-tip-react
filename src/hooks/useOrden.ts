@@ -24,6 +24,10 @@ export default function useOrden() {
     const removeItem = (id: MenuItem['id']) => {
         setOrder(order.filter(item => item.id !== id))
     }
+
+    const placeOrder = () => {
+        console.log("Guardando")
+    }
     
     return {
         order,
@@ -31,5 +35,6 @@ export default function useOrden() {
         setTip,
         addItem,
         removeItem,
+        placeOrder
     }
 }
